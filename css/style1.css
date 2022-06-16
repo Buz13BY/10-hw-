@@ -1,0 +1,78 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Montserrat, sans-serif;
+	color:#333333;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #333333;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+:focus {
+	padding: 10px;
+	border: 1 solid #FF9900;
+}
+
+.container{
+	max-width: 1770px;
+	margin: 0 auto;
+}
+
+/* header */
+
+.header {
+	max-width: 1920px;
+	max-height: 100px;
+	margin: 0 auto;
+	box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+	display: block;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+}
+
+.header__nav_list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.headr__nav_item {
+	margin-right: 85px;
+}
+
+/* section-hero */
+
+.section-hero__container {
+	max-height: 620px;
+	background-image: url('/10-hw/img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
