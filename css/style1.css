@@ -46,6 +46,7 @@ h1, h3, h3, h4 {
 	letter-spacing: 0em;
 	cursor: pointer;
 	border: none;
+	border-radius: 16px;
 
 }
 
@@ -63,11 +64,25 @@ h1, h3, h3, h4 {
 .header {
 	max-width: 1920px;
 	margin: 0 auto;
+	padding: 0 15px 0 15px;
 	box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+	border-radius: 0px 0px 32px 32px;
+}
+
+.burger {
+	display: none;
+	background-color: transparent;
+	border: none;
+}
+
+.header__logo {
+	max-width: 225px;
+	max-height: 72px;
 }
 
 .header img {
 	display: block;
+	object-fit: cover;
 }
 
 .header__container {
@@ -79,6 +94,7 @@ h1, h3, h3, h4 {
 
 .nav {
 	display: flex;
+	margin-left: calc(0px + 555 * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 .header__nav_list {
@@ -91,26 +107,29 @@ h1, h3, h3, h4 {
 .headr__nav_item {
 	margin-right: 85px;
 	font-weight: 600;
-	font-size: 18px;
+	font-size: calc(16px + 2 * ((100vw - 320px) / (1920 - 320)));
 	line-height: 1;
 }
 
 /* section-hero */
 
 .section-hero__container {
+	margin-top: 50px;
 	background-image: url(../img/hero/low-angle-photo-of-balconies-2462015\ 1.jpg);
+	background-size: cover;
 	height: 620px;
 	color: #fff;
+	border-radius: 32px;
 }
 
 .section-hero__header {
 	margin: 0;
-	padding-top: 100px;
+	padding-top: calc(60px + (100 - 60) * ((100vw - 320px) / (1920 - 320)));;;
 	margin-left: 85px;
 	max-width: 837px;
 	font-weight: 800;
-	font-size: 70px;
-	line-height: 85.33px;
+	font-size: calc(20px + 50 * ((100vw - 320px) / (1920 - 320)));
+	line-height: calc(24.38px + (73.14 - 24.38) * ((100vw - 320px) / (1920 - 320)));;;
 }
 
 .section-hero__description {
@@ -118,8 +137,8 @@ h1, h3, h3, h4 {
 	margin-left: 85px;
 	max-width: 790px;
 	font-weight: 700;
-	font-size: 24px;
-	line-height: 29.26px;
+	font-size: calc(12px + 12 * ((100vw - 320px) / (1920 - 320)));
+	line-height: calc(14.63px + (24.38-14.63) * ((100vw - 320px) / (1920 - 320)));;
 }
 
 .section-hero__btn {
@@ -189,5 +208,36 @@ h1, h3, h3, h4 {
 	margin: 0 auto;
 }
 
+@media (max-width: 1089px){
+	.headr__nav_item {
+		margin-right: 80px;
+	}
+}
 
+@media (max-width: 1024px){
+
+	.header {
+		padding: 0 50px 0 50px;
+	}
+
+	.header__logo {
+		display: block;
+		max-width: 150px;
+		max-height: 48px;
+	}
+
+	.header img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.nav {
+		display: none;
+	}
+}
 
